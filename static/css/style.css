@@ -1,0 +1,244 @@
+body {
+  font-family: cursive, sans-serif,'Times New Roman', Times, serif;
+  font-weight: normal;
+  font-style: normal;
+}
+
+.block{
+  height: 300px;
+}
+
+.block1-color, .bg-cipher1{
+  background-color: #005960;
+}
+
+.block2-color, .bg-cipher2{
+  background-color: #ed9302;
+}
+
+.block3-color, .bg-cipher3{
+  background-color: #bc243c;
+}
+
+.block4-color, .bg-cipher4{
+  background-color: #4f1a5f;
+}
+
+.block5-color, .bg-cipher5{
+  background-color: #C82918;
+}
+
+.block6-color, .bg-cipher6{
+  background-color: #3FA411;
+}
+
+.block7-color, .bg-cipher7{
+  background-color: #bc243c;
+}
+
+.block8-color, .bg-cipher8{
+  background-color: #6B5B95;
+}
+
+.block9-color, .bg-cipher9{
+  background-color: #4f1a5f;
+}
+
+.text-position{
+  margin: auto;
+}
+
+.custom-button{
+  border:0
+}
+
+.custom-button-1:hover{
+  cursor: pointer;
+  background-color: rgba(0,89,96,0.5);
+}
+
+.custom-button-2:hover{
+  cursor: pointer;
+  background-color: rgba(237,147,2,0.5);
+}
+
+.custom-button-3:hover{
+  cursor: pointer;
+  background-color: rgba(188,36,60,0.5);
+}
+
+.custom-button-4:hover{
+  cursor: pointer;
+  background-color: rgba(79,26,95,0.5);
+}
+
+.custom-button-5:hover{
+  cursor: pointer;
+  background-color: rgba(200,41,24,0.5);
+}
+
+.custom-button-6:hover{
+  cursor: pointer;
+  background-color: rgba(63,164,17,0.5);
+}
+
+.block-text{
+  font-size: xx-large; 
+  font-weight: bold;
+  color: #040E27;
+}
+
+.block-text-onhover-1:hover{
+  color: #005960;
+}
+
+.block-text-onhover-2:hover{
+  color: #ed9302;
+}
+
+.block-text-onhover-3:hover{
+  color: #bc243c;
+}
+
+.block-text-onhover-4:hover{
+  color: #4f1a5f;
+}
+
+.block-text-onhover-5:hover{
+  color: #C82918;
+}
+
+.block-text-onhover-6:hover{
+  color: #3FA411;
+}
+
+.block-text-onhover-7:hover{
+  color: #bc243c;
+}
+
+.block-text-onhover-8:hover{
+  color: #6B5B95;
+}
+
+.block-text-onhover-9:hover{
+  color: #4f1a5f;
+}
+
+.copyright {
+  display: inline-block !important; 
+  margin: auto !important; 
+  color: black !important;
+  padding-top: 100px !important;
+  padding-bottom: 15px !important;
+  font-size: 15px !important;
+  margin-bottom: 0 !important;
+  font-weight: 500 !important;
+  font-size: 13px !important;
+}
+
+form-control-dropdown {
+  display: block;
+  width: 20px;
+  padding: .375rem .75rem;
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #495057;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid #ced4da;
+  border-radius: .25rem;
+  transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+}
+
+.form-control-for-input{
+  display: inline-block;
+  width: 200px;
+  padding: .375rem .75rem;
+  font-size: 1rem;
+  line-height: 1.5;
+  color:#495057;
+  background-color:#fff;
+  background-clip: padding-box;
+  border: 1px solid #ced4da;
+  border-radius: .25rem;
+  transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+  margin: auto;
+}
+
+.form-control-for-input-contact-us{
+  display: inline-block;
+  width: 260px;
+  padding: .375rem .75rem;
+  font-size: 1rem;
+  line-height: 1.5;
+  color:#495057;
+  background-color:#fff;
+  background-clip: padding-box;
+  border: 1px solid #ced4da;
+  border-radius: .25rem;
+  transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+  margin: auto;
+}
+
+.form-control-for-textarea{
+  padding: .375rem .75rem;
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #495057;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid #ced4da;
+  border-radius: .25rem;
+  transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+  margin: auto;
+}
+
+.fa-ico{
+  height: 20px;
+  width: 20px;
+}
+
+.quote {
+  height: 40px;
+  width: 100%;
+}
+
+.btn:hover {
+  color: black !important;
+  background-color:#17a2b8;
+}
+
+.logo{
+  height: 60px;
+  width: auto;
+}
+
+.text-color-white{
+  color: white;
+}
+
+.text-color-white:hover{
+  color:black;
+}
+
+.link-color-black-size-18{
+  color:black !important;
+  font-size: 18px;
+  border-radius: 20px;
+}
+
+.link-color-black-size-18:hover{
+  color:white !important;
+  font-size: 18px;
+  border-radius: 20px;
+  background-color: rgba(0,89,96,0.5);
+}
+
+a{
+  color: black;
+}
+
+a:hover{
+  color:white;
+  text-decoration: none;
+}
