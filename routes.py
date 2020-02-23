@@ -21,12 +21,12 @@ def removeAllSpecialCharactersExcludingSpaces(text):
 @application.route('/')
 @application.route('/home')
 def home():
-	return render_template('index.html', title='Home - SIPHER', output="")
+	return render_template('index.html', title='Home', output="")
 
 
 @application.route('/about-us')
 def support():
-  return render_template('about.html', title='About Us - SIPHER', output="")
+  return render_template('about.html', title='About Us', output="")
 
 
 @application.route('/contact-us', methods=['GET', 'POST'])
@@ -37,18 +37,18 @@ def contact():
     msg = request.form.get('comment')
     #send mail
     print(name, email, msg)
-    return render_template('index.html', title='Home - SIPHER', output="")
-  return render_template('contact.html', title='Contact Us - SIPHER', output="")
+    return render_template('index.html', title='Home', output="")
+  return render_template('contact.html', title='Contact Us', output="")
 
 
 @application.route('/layout')
 def layout():
-  return render_template('layout.html', title='Layout - SIPHER')
+  return render_template('layout.html', title='Layout')
 
 
 @application.route('/cipher')
 def cipher():
-  return render_template('cipher.html', title='Cipher - SIPHER')
+  return render_template('cipher.html', title='Cipher')
 
 
 @application.route('/affine', methods=['GET', 'POST'])
@@ -88,7 +88,7 @@ def Affine():
       output = output.upper()
     elif set2 == 'opt6':
       output = output.lower()
-  return render_template('affine.html', title='Affine Cipher - SIPHER', msg=msg, output=output, set1=set1, set2=set2, a=a, b=b)
+  return render_template('affine.html', title='Affine Cipher', msg=msg, output=output, set1=set1, set2=set2, a=a, b=b)
 
 
 @application.route('/atbash', methods=['GET', 'POST'])
@@ -124,7 +124,7 @@ def Atbash():
       output = output.upper()
     elif set2 == 'opt6':
       output = output.lower()
-  return render_template('atbash.html', title='Atbash Cipher - SIPHER', msg=msg, output=output, set1=set1, set2=set2)
+  return render_template('atbash.html', title='Atbash Cipher', msg=msg, output=output, set1=set1, set2=set2)
 
 
 @application.route("/baconian", methods=['GET', 'POST'])
@@ -163,7 +163,7 @@ def Baconian():
         output = output.lower()
     except:
       return render_template('baconian.html', title='Baconian Cipher', msg=msg, output=output, set1=set1, set2=set2, disp=True)
-  return render_template('baconian.html', title='Baconian Cipher - SIPHER', msg=msg, output=output, set1=set1, set2=set2, disp=False)
+  return render_template('baconian.html', title='Baconian Cipher', msg=msg, output=output, set1=set1, set2=set2, disp=False)
 
 
 @application.route('/caesar', methods=['GET', 'POST'])
@@ -201,7 +201,7 @@ def Caesar():
       output = output.upper()
     elif set2 == 'opt6':
       output = output.lower()
-  return render_template('caesar.html', title='Caesar Cipher - SIPHER', msg=msg, output=output, set1=set1, set2=set2, shift=shift)
+  return render_template('caesar.html', title='Caesar Cipher', msg=msg, output=output, set1=set1, set2=set2, shift=shift)
 
 
 @application.route("/rot13", methods=['GET', 'POST'])
@@ -237,7 +237,7 @@ def Rot13():
       output = output.upper()
     elif set2 == 'opt6':
       output = output.lower()
-  return render_template('rot13.html', title='Rot13 Cipher - SIPHER', msg=msg, output=output, set1=set1, set2=set2)
+  return render_template('rot13.html', title='Rot13 Cipher', msg=msg, output=output, set1=set1, set2=set2)
 
 
 # @application.route("/polybius_square")
@@ -312,7 +312,7 @@ def Vigenere():
       output = output.upper()
     elif set2 == 'opt6':
       output = output.lower()
-  return render_template('vigenere.html', title='Vigenère Cipher - SIPHER', msg=msg, output=output, set1=set1, set2=set2, key=key)
+  return render_template('vigenere.html', title='Vigenère Cipher', msg=msg, output=output, set1=set1, set2=set2, key=key)
 
 # @application.route("/xor", methods=['GET', 'POST'])
 # def Xor():
@@ -349,4 +349,4 @@ def Vigenere():
 #       output = output.upper()
 #     elif set2 == 'opt6':
 #       output = output.lower()
-#   return render_template('xor.html', title='XOR Cipher - SIPHER', msg=msg, output=output, set1=set1, set2=set2, key=key)
+#   return render_template('xor.html', title='XOR Cipher', msg=msg, output=output, set1=set1, set2=set2, key=key)
