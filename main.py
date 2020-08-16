@@ -1,4 +1,4 @@
-from Sipher import application
+from flask import Flask
 from flask import render_template, request
 from modules import affine
 from modules import atbash
@@ -8,6 +8,8 @@ from modules import polybius_square
 from modules import rot13
 from modules import vigenere
 from modules import xor
+
+application = Flask(__name__)
 
 
 def removeAllSpecialCharactersIncludingSpaces(text):
@@ -350,3 +352,7 @@ def Vigenere():
 #     elif set2 == 'opt6':
 #       output = output.lower()
 #   return render_template('xor.html', title='XOR Cipher', msg=msg, output=output, set1=set1, set2=set2, key=key)
+
+
+if __name__ == "__main__":
+  application.run()
